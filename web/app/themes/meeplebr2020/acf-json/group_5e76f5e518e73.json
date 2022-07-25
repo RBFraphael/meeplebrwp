@@ -1,0 +1,257 @@
+{
+    "key": "group_5e76f5e518e73",
+    "title": "Template Página: Lista de Produtos Meeple",
+    "fields": [
+        {
+            "key": "field_5e76f5fd6e5c4",
+            "label": "Fonte do Ícone",
+            "name": "icon-source",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fa": "Biblioteca de Ícones",
+                "img": "Imagem"
+            },
+            "default_value": [
+                "fa"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e76f65b6e5c5",
+            "label": "Ícone",
+            "name": "fa-icon",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e76f5fd6e5c4",
+                        "operator": "==",
+                        "value": "fa"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "fas",
+                "far",
+                "fab"
+            ],
+            "custom_icon_set": "",
+            "default_label": "",
+            "default_value": "",
+            "save_format": "element",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 0,
+            "fa_live_preview": "",
+            "choices": []
+        },
+        {
+            "key": "field_5e76f6706e5c6",
+            "label": "Ícone Personalizado",
+            "name": "img-icon",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e76f5fd6e5c4",
+                        "operator": "==",
+                        "value": "img"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "small-icon",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e76f8063d02e",
+            "label": "Produtos a exibir",
+            "name": "show-products",
+            "type": "repeater",
+            "instructions": "Deixe vazio para exibir todos os Produtos Meeple.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5e76f8963d02f",
+                    "label": "Produto Meeple",
+                    "name": "product",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "meeple_product"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_5e76f9173d030",
+            "label": "Grupos a exibir",
+            "name": "show-groups",
+            "type": "repeater",
+            "instructions": "Deixe vazio para exibir todos os Grupos de Produtos Meeple",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5e76f96f3d031",
+                    "label": "Grupo de Produtos",
+                    "name": "group",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "taxonomy": "meeple_product_group",
+                    "field_type": "select",
+                    "allow_null": 0,
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "multiple": 0
+                }
+            ]
+        },
+        {
+            "key": "field_5e76fb28abaf5",
+            "label": "Ordem de exibição",
+            "name": "show-order",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "ASC": "Crescente",
+                "DESC": "Decrescente"
+            },
+            "default_value": [
+                "ASC"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e76fb65abaf6",
+            "label": "Ordenar por",
+            "name": "show-orderby",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "title": "Título do Produto",
+                "date": "Data de Publicação"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-page-products_list.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1584857166
+}

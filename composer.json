@@ -1,0 +1,67 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        },
+        {
+            "type": "composer",
+            "url": "https://wp-languages.github.io",
+            "only": [
+                "koodimonni-language/*",
+                "koodimonni-plugin-language/*",
+                "koodimonni-theme-language/*"
+            ]
+        }
+    ],
+    "require": {
+        "composer/installers" : "^2.1",
+        "johnpbloch/wordpress": "^6.0",
+        "oscarotero/env": "^2.1",
+        "vlucas/phpdotenv": "^5.4",
+        "wpackagist-plugin/advanced-custom-fields-font-awesome": "^4.0",
+        "wpackagist-plugin/cf7-conditional-fields": "^2.2",
+        "wpackagist-plugin/classic-editor": "^1.6",
+        "wpackagist-plugin/contact-form-7": "^5.6",
+        "wpackagist-plugin/contact-form-7-multi-step-module": "^4.1",
+        "wpackagist-plugin/disqus-comment-system": "^3.0",
+        "wpackagist-plugin/guest-author": "^2.2",
+        "wpackagist-plugin/polylang": "^3.2",
+        "wpackagist-plugin/re-add-underline-justify": "^0.3.0",
+        "wpackagist-plugin/webp-express": "^0.25.5",
+        "wpackagist-plugin/wordpress-seo": "^19.3",
+        "wpackagist-plugin/wp-file-manager": "^7.1",
+        "wpackagist-plugin/wp-optimize": "^3.2",
+        "wpackagist-plugin/breadcrumb-navxt": "^7.1",
+        "koodimonni-language/pt_br": "^6.0"
+    },
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "web/app/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "dropin-paths": {
+            "web/app/languages/": ["vendor:koodimonni-language"],
+            "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+            "web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
+        },
+        "wordpress-install-dir": "web/cms"
+    },
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true,
+            "koodimonni/composer-dropin-installer": true
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php config/post-install.php"
+        ],
+        "post-update-cmd": [
+            "php config/post-install.php"
+        ]
+    }
+}

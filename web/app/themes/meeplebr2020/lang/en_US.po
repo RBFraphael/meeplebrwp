@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-07-25 01:26-0300\n"
+"PO-Revision-Date: 2022-07-25 01:27-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: acf-json\n"
+"X-Poedit-SearchPathExcluded-1: assets\n"
+"X-Poedit-SearchPathExcluded-2: inc\n"
+"X-Poedit-SearchPathExcluded-3: lang\n"
+
+#: archive-meeple_product.php:38 taxonomy-meeple_product_group.php:39
+#: taxonomy-meeple_product_tag.php:39 template-page-products_list.php:85
+msgid "Nenhum produto disponível."
+msgstr "No products found."
+
+#: archive-meeple_product.php:52 archive.php:68 home.php:73
+#: taxonomy-meeple_product_group.php:53 taxonomy-meeple_product_tag.php:53
+msgid "Página anterior"
+msgstr "Previous page"
+
+#: archive.php:45 home.php:50 search.php:51 template-page-homepage.php:86
+msgid "Quero ver!"
+msgstr "Continue reading"
+
+#: archive.php:54 home.php:59 search.php:60
+msgid "Nenhum post disponível."
+msgstr "No posts found."
+
+#: searchform.php:5
+msgid "Search for"
+msgstr "Search for"
+
+#: single-meeple_product.php:10 single-meeple_product.php:139
+msgid "Componentes"
+msgstr "Components"
+
+#: single-meeple_product.php:131
+msgid "Ficha Técnica"
+msgstr "About the Product"
+
+#: single-meeple_product.php:156
+msgid "Vídeos"
+msgstr "Videos"
+
+#: single-meeple_product.php:170
+msgid "Produtos Relacionados"
+msgstr "Related Products"
+
+#: single.php:71
+msgid "Compartilhar postagem:"
+msgstr "Share post:"
+
+#: single.php:72
+msgid "Compartilhar no Facebook"
+msgstr "Share on Facebook"
+
+#: single.php:73
+msgid "Compartilhar no Pinterest"
+msgstr "Share on Pinterest"
+
+#: single.php:74
+msgid "Compartilhar no Twitter"
+msgstr "Share on Twitter"
+
+#: single.php:75
+msgid "Enviar por e-mail"
+msgstr "Send via e-mail"

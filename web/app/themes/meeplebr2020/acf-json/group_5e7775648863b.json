@@ -1,0 +1,119 @@
+{
+    "key": "group_5e7775648863b",
+    "title": "Página do Blog",
+    "fields": [
+        {
+            "key": "field_5e77756de3f7f",
+            "label": "Fonte do Ícone",
+            "name": "icon-source",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "fa": "Biblioteca de Ícones",
+                "img": "Ícone Personalizado"
+            },
+            "default_value": [
+                "fa"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5e777594e3f80",
+            "label": "Ícone",
+            "name": "fa-icon",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e77756de3f7f",
+                        "operator": "==",
+                        "value": "fa"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "fas",
+                "far",
+                "fab"
+            ],
+            "custom_icon_set": "",
+            "default_label": "",
+            "default_value": "",
+            "save_format": "element",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 0,
+            "fa_live_preview": "",
+            "choices": []
+        },
+        {
+            "key": "field_5e7775abe3f81",
+            "label": "Ícone Personalizado",
+            "name": "img-icon",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e77756de3f7f",
+                        "operator": "==",
+                        "value": "img"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "small-icon",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "posts_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1584887431
+}
