@@ -1,0 +1,173 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    z-index: 999;
+}
+
+.bg-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1.banner-title{
+    font-size: 3em;
+}
+
+@media(max-width: 767px){
+    h1.banner-title{
+        font-size: 1.2em;
+    }
+}
+
+.carousel{
+    position: relative;
+}
+
+.carousel button.next-slide,
+.carousel button.prev-slide{
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    transform: translateY(-50%);
+}
+
+.carousel button.next-slide{
+    right: 0;
+}
+
+.carousel button.prev-slide{
+    left: 0;
+}
+
+.carousel .slides div{
+    outline: none !important;
+}
+
+.btn-square{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-square *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    background: #FFF;
+}
+
+a.category-link{
+    position: relative;
+    text-decoration: none;
+    transform: scale(1);
+    background-color: #fff;
+    color: #0a2d4b;
+    transition: all 0.5s;
+}
+a.category-link:hover{
+    z-index: 9;
+    transform: scale(1.05);
+    background-color: #0a2d4b;
+    color: #fff;
+}
+
+.loader .spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-top: solid 7px #000;
+    border-left: solid 7px #FFF;
+    border-bottom: solid 7px #FFF;
+    border-right: solid 7px #FFF;
+    animation: 1s spin infinite linear;
+    transform-origin: 50% 50%;
+}
+
+@keyframes spin{
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(359.9deg);
+    }
+}
+
+a.partner-link{
+    transform: scale(1);
+    transition: all 0.5s;
+    display: block;
+}
+a.partner-link:hover{
+    transform: scale(1.2);
+}
+
+.element-1{
+    position: relative;
+}
+.element-1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-image: url("../img/meeple/element.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:767px){
+    .element-1::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-image: url("../img/meeple/element.png");
+        background-position: right center;
+        opacity: 0;
+    }    
+}
+
+.wide{
+    padding-top: 56.25%;
+}
+
+.custom-file-label::after{
+    content: "Procurar" !important;
+}
+
+.title-green{
+    background-color: #5b297e;
+    padding: 10px;
+    box-shadow: 10px 10px #19927B;
+}
+
+.title-purple{
+    background-color: #19927B;
+    padding: 10px;
+    box-shadow: 10px 10px #5b297e;
+}
