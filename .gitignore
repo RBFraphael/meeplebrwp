@@ -1,23 +1,48 @@
-# ignore everything in the root except the "wp-content" directory.
-!wp-content/
+# Application
+web/app/mu-plugins
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+!web/app/plugins/advanced-custom-fields-pro
+!web/app/plugins/meeplebr-custom-panel
+web/app/themes/twenty*
+!web/app/themes/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/app/*cache*/*
+web/app/*backup*/*
+web/app/languages
 
-# ignore everything in the "wp-content" directory, except:
-# "mu-plugins", "plugins", "themes" directory
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+# WordPress
+web/cms
+web/.htaccess
 
-# ignore these plugins
-wp-content/plugins/hello.php
-
-# ignore specific themes
-wp-content/themes/twenty*/
-
-# ignore node dependency directories
-node_modules/
-
-# ignore log files and databases
+# Logs
 *.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+composer.lock
+
+# Node
+node_modules
+package-lock.json
+yarn.lock
+
+# WP-CLI
+wp-cli.local.yml
+
+# Cache, database dumps and other unnecessary things
 *.sql
 *.sqlite
+.DS_Store
+.idea
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+deploy*
