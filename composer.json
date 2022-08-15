@@ -34,7 +34,8 @@
         "wpackagist-plugin/wp-file-manager": "^7.1",
         "wpackagist-plugin/wp-optimize": "^3.2",
         "wpackagist-plugin/breadcrumb-navxt": "^7.1",
-        "koodimonni-language/pt_br": "^6.0"
+        "koodimonni-language/pt_br": "^6.0",
+        "wpackagist-plugin/really-simple-ssl": "^5.3"
     },
     "extra": {
         "installer-paths": {
